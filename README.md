@@ -1,0 +1,2 @@
+# termdict
+dictionary in terminal
