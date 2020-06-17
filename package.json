@@ -1,0 +1,32 @@
+{
+  "name": "termdict",
+  "version": "1.0.0",
+  "description": "dictionary in terminal",
+  "main": "cli.js",
+  "bin": {
+    "termdict": "./cli.js"
+  },
+  "scripts": {
+    "test": "termdict search nice"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayurdahibhate/termdict.git"
+  },
+  "keywords": [
+    "dictionary",
+    "cli"
+  ],
+  "author": "mayurdahibhate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mayurdahibhate/termdict/issues"
+  },
+  "homepage": "https://github.com/mayurdahibhate/termdict#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "commander": "^5.1.0"
+  }
+}
