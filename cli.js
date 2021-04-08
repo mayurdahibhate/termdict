@@ -11,14 +11,12 @@ const searchWord = (word) => {
 
         let $ = cheerio.load(response.data);
 
-        let pronunciation = $('span.pron-spell-content.css-z3mf2.evh0tcl2').first().text().trim()
+        let pronunciation = $('span.pron-spell-content.css-1ksa987.evh0tcl1').first().text().trim()
         let kind = $('span.luna-pos').first().text().trim().replace(',', '')
-        let def = $('div.css-kg6o37.e1q3nk1v3').first().text().trim().replace('(', '').replace(')', '')
+        let def = $('span.one-click-content.css-ibc84h.e1q3nk1v1').first().text().trim().replace('(', '').replace(')', '')
     
-        console.log(chalk`
-                {bold ${word}} 
-                {green ${kind}} {blue ${pronunciation}}
-        `);
+        console.log(chalk`{bold ${word}}`); 
+        console.log(chalk`{green ${kind}} {blue ${pronunciation}}`);
         console.log(def)
 
     })
@@ -30,10 +28,10 @@ const wordOfTheDay = () => {
 
         let $ = cheerio.load(response.data);
 
-        let word = $('div.wotd-item-headword__word').first().text().trim()
-        let pronunciation = $('div.wotd-item-headword__pronunciation').first().text().trim()
+        let word = $('div.otd-item-headword__word').first().text().trim()
+        let pronunciation = $('div.otd-item-headword__pronunciation').first().text().trim()
         let kind = $('span.luna-pos').first().text().trim().replace(',', '');
-        let def = $('div.wotd-item-headword__pos > p').first().next().text().trim()
+        let def = $('div.otd-item-headword__pos > p').first().next().text().trim()
 
         console.log(chalk`
                 {bold ${word}} 
