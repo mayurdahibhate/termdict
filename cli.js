@@ -17,7 +17,7 @@ const searchWord = (word) => {
     
         console.log(chalk`{bold ${word}}`); 
         console.log(chalk`{green ${kind}} {blue ${pronunciation}}`);
-        console.log(def)
+        console.log(def);
 
     })
 };
@@ -33,11 +33,9 @@ const wordOfTheDay = () => {
         let kind = $('span.luna-pos').first().text().trim().replace(',', '');
         let def = $('div.otd-item-headword__pos > p').first().next().text().trim()
 
-        console.log(chalk`
-                {bold ${word}} 
-                {green ${kind}} {blue ${pronunciation}}
-        `);
-        console.log(def)
+        console.log(chalk`{bold ${word}}`); 
+        console.log(chalk`{green ${kind}} {blue ${pronunciation}}`);
+        console.log(def);
 
     })
 };
