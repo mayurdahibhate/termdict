@@ -4,7 +4,7 @@ Use dictionary in your terminal.
 
 ### Installation
 1. Install from github repo. Requires sudo privileges.
-    ```npm install -g https://github.com/mayurdahibhate/termdict.git```
+```npm install -g https://github.com/mayurdahibhate/termdict.git```
 
 
 ### Basic Usage
